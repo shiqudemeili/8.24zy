@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #box{
+            width: 300px;
+            height: 300px;
+            border: 1px solid #000;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+<div id="box"></div>
+<input type="text" value="" id="txt"><input type="button" value="发送" id="btn">
+</body>
+</html>
+<script>
+    /*获取元素*/
+    var a="ss"
+        obox=document.getElementById("box"),
+        otxt=document.getElementById("txt"),
+        obtn=document.getElementById("btn");
+    /*添加点击事件*/
+    obtn.onclick =
+        /*发送消息到DIV*/
+        function () {
+           obox.innerHTML=obox.innerHTML+"<p>"+a+"</p>"+"<p>"+otxt.value+"</p>";
+           otxt.value=""
+        }
+</script>

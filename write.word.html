@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="txt" value=""><input type="button" value="确认" id="btn">
+<img src="img/1.jpg" alt="" id="photo" width="300px" height="300px">
+</body>
+</html>
+<script>
+    /*获取元素*/
+    var otxt=document.getElementById("txt"),
+        obtn=document.getElementById("btn"),
+        ophoto=document.getElementById("photo");
+    /* 添加点击事件 */
+    obtn.onclick=fn
+    /*插入图片的方法*/
+    function fn() {
+        ophoto.src=otxt.value
+    }
+</script>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="txt" type="text" value=""><input type="submit" value="弹窗" id="sbt">
+</body>
+</html>
+<script>
+    /*获取元素*/
+    var otxt=document.getElementById("txt"),osbt=document.getElementById("sbt");
+    /*添加点击事件*/
+    osbt.onclick =
+        /*点击按钮的时候输出窗出现窗口的值*/
+        function () {
+        otxt.value=osbt.value;
+    }
+</script>
