@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button>我爱你</button>
+<button>我爱你</button>
+<button>我爱你</button>
+<button>我爱你</button>
+<button>我爱你</button>
+<button>我爱你</button>
+</body>
+</html>
+<script>
+    var oBtn=document.getElementsByTagName("button");
+    for (var i=0 ;i<oBtn.length;i ++){
+        (function (i) {
+            oBtn[i].onclick=function () {
+                for(var j=0;j<oBtn.length;j++){
+                    oBtn[j].style.background= "";
+                }
+                this.style.background= "red";
+            }
+        })(i)
+    }
+
+</script>

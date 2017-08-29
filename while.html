@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            border:2px solid #c60;
+            margin: 100px 10px;
+            float: left;
+        }
+    </style>
+    <script>
+        window.onload=function () {
+            var oDiv=document.getElementsByTagName('div');
+            var i=0;
+            while (i<oDiv.length){
+                oDiv[i].onclick=function () {
+                    alert('1');
+                }
+                i++;
+            }
+        }
+    </script>
+</head>
+<body>
+<div></div>
+<div></div>
+<div></div>
+</body>
+</html>

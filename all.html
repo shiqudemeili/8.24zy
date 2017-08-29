@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <button class="btn1">全选</button> <button class="btn2">取消</button> <button class="btn3">反选</button>
+</div>
+<div>
+    <ul>
+        <li>选项:<input name="w" type="checkbox"></li>
+        <li>选项:<input name="w" type="checkbox"></li>
+        <li>选项:<input name="w" type="checkbox"></li>
+        <li>选项:<input name="w" type="checkbox"></li>
+        <li>选项:<input name="w" type="checkbox"></li>
+        <li>选项:<input name="w" type="checkbox"></li>
+        <li>选项:<input name="w" type="checkbox"></li>
+        <li>选项:<input name="w" type="checkbox"></li>
+        <li>选项:<input name="w" type="checkbox"></li>
+        <li>选项:<input name="w" type="checkbox"></li>
+    </ul>
+</div>
+</body>
+</html>
+<script>
+    var oBtn=document.getElementsByTagName("button");
+    var oCheck=document.getElementsByTagName("input");
+        oBtn[0].onclick=function () {
+            for(var i=0;i<oCheck.length;i++){
+              oCheck[i].checked=true;
+            }
+        }
+        oBtn[1].onclick=function () {
+            for(var i=0;i<oCheck.length;i++){
+                oCheck[i].checked= false;
+            }
+        }
+        oBtn[2].onclick=function () {
+            for(var i=0;i<oCheck.length;i++){
+                if(oCheck[i].checked==true){
+                    oCheck[i].checked=false;
+                }else {
+                    oCheck[i].checked=true;
+                }
+            }
+        }
+</script>
